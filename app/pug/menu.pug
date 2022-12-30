@@ -1,0 +1,19 @@
+- var path_to_index = "D:\\part5\\HTML\\preprochessors\\new_project\\dist\\index.html"
+- var path_to_index_css = "D:\\part5\\HTML\\preprochessors\\new_project\\dist\\index.css"
+- var path_to_css_text = "D:\\part5\\HTML\\preprochessors\\new_project\\dist\\css text.html"
+- var path_to_css_font = "D:\\part5\\HTML\\preprochessors\\new_project\\dist\\css_font.html"
+
+mixin list(path_to_index, path_to_index_css, path_to_css_text, path_to_css_font)
+    ul
+        li.CSS
+            a(href=path_to_index) CSS
+        li Синтаксис CSS
+        li Вставка CSS
+        li.CSS_text
+            a(href=path_to_css_text) CSS текст
+        li.CSS_font
+            a(href=path_to_css_font) CSS шрифт
+        li Блоки
+
+div.menu
+    +list(path_to_index, path_to_index_css, path_to_css_text, path_to_css_font)
