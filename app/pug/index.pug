@@ -1,32 +1,20 @@
 extends template.pug
 
 block link
-	- var path_to_index = "D:\\part5\\HTML\\preprochessors\\new_project\\dist\\index.html"
 	- var path_to_index_css = "D:\\part5\\HTML\\preprochessors\\new_project\\dist\\index.css"
-	- var path_to_css_text = "D:\\part5\\HTML\\preprochessors\\new_project\\dist\\css text.html"
-	- var path_to_css_font = "D:\\part5\\HTML\\preprochessors\\new_project\\dist\\css font.html"
 
 	link(rel="stylesheet", href=path_to_index_css)
 
 block content
 	.container
-		div.menu
-			ul
-				li.CSS
-					a(href=path_to_index) CSS
-				li Синтаксис CSS
-				li Вставка CSS
-				li.CSS_text
-					a(href=path_to_css_text) CSS текст
-				li.CSS_font
-					a(href=path_to_css_font) CSS шрифт
-				li Блоки
+		include menu
 		.text_info
 			p.first_p CSS (англ. Cascading Style Sheets — каскадные таблицы стилей) — формальный язык описания внешнего вида документа, написанного с использованием языка разметки.
 
-			p.second_p Основным понятием CSS является стиль – т. е. набор правил оформления и форматирования, который может быть  применен к различным элементам страницы. Для присвоения какому-либо элементу определенных характеристик необходимо  один раз описать этот элемент и определить это описание как стиль, а в дальнейшем просто указывать, что элемент получить свойства выбранного стиля.
+			div.cost
+				p.second_p Основным понятием CSS является стиль – т. е. набор правил оформления и форматирования, который может быть  применен к различным элементам страницы. Для присвоения какому-либо элементу определенных характеристик необходимо  один раз описать этот элемент и определить это описание как стиль, а в дальнейшем просто указывать, что элемент получить свойства выбранного стиля.
 				.pic
-					img(src= "D:\\part5\\HTML\\preprochessors\\new_project\\img\\css1.jpg")
+					img(src="D:\\part5\\HTML\\preprochessors\\new_project\\img\\css1.jpg")
 
 		.video_info
 			iframe(width='560', height='315', src='https://www.youtube.com/embed/1Q10OoX5QiM', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
